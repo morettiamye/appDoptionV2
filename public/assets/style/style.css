@@ -1,68 +1,27 @@
-<<<<<<< HEAD
+/* Font Families:
+font-family: 'Cookie', cursive;
+font-family: 'Roboto', sans-serif;
 
-#info {
-    font-family: 'Roboto', sans-serif;
-    padding: 50px;
+*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-/* unvisited link */
-a:link {
-    color: black;
+.header {
+    flex-shrink: 0;
+    display: inline-flex;
 }
 
-/* visited link */
-a:visited {
-    color: black;
+.logo {
+    font-family: 'Cookie', cursive;
+    font-size: 32px;
 }
 
-/* mouse over link */
-a:hover {
-    color: black;
+
+#paw {
+   height: 50px;
+   vertical-align: middle;
 }
-
-/* selected link */
-a:active {
-    color: black;
-
-#mapContainer{
-    width:600px;
-    height:600px;
-}
-=======
-  label color .input-field label {
-      color: #000;
-  }
-
-  /* label focus color */
-
-  .input-field input[type=text]:focus+label {
-      color: #000;
-  }
-
-  /* label underline focus color */
-
-  .input-field input[type=text]:focus {
-      border-bottom: 1px solid #000;
-      box-shadow: 0 1px 0 0 #000;
-  }
-
-  /* valid color */
-
-  .input-field input[type=text].valid {
-      border-bottom: 1px solid #000;
-      box-shadow: 0 1px 0 0 #000;
-  }
-
-  /* invalid color */
-
-  .input-field input[type=text].invalid {
-      border-bottom: 1px solid #000;
-      box-shadow: 0 1px 0 0 #000;
-  }
-
-  /* icon prefix focus color */
-
-  .input-field .prefix.active {
-      color: #000;
-  }
->>>>>>> petsProject
