@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts CDN-->
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Roboto:300" rel="stylesheet">
 
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/style/style.css">
@@ -28,19 +28,32 @@
             <span><img src="./assets/images/pawIcon.png" alt="Paw" id="paw"></span>
             <span id="logo">Appdoption</span>
             <span class="search">
-                <input type="text" placeholder="Search"></input>
+                <form>
+                    <input type="text" maxlength="5" placeholder="Search by Zipcode" class="headerSearch"></input>
+                    <input type="radio" name="search" value="cats" checked>Cats
+                    <input type="radio" name="search" value="dogs">Dogs
             </span>
+            </form>
         </div> <!-- Close Header-->
 
 
         <!-- Main Content Container-->
         <div class="content">
             <!-- Hide this when displaying search results-->
-            <div class="main"></div> <!-- Close Main-->
-            <!-- Show this div for search results-->
-            <div class="results"></div> <!-- Close Results-->
-            <!-- Show for about page -->
-            <div class="about"></div><!-- Close about-->
+            <div class="main">
+
+                
+                <!-- ////////////////////To be Copied for Dynamically Updating ///////////////////////// -->
+                <div class="resultscontainer">
+                <img src="assets/images/placeholder.jpeg" alt="placeholder" class="card">
+                <div class="middle">
+                        <div class="cardname">Mr Fluffy</div>
+                        </div>
+                </div>
+                <!-- ////////////////////To be Copied for Dynamically Updating ///////////////////////// -->
+
+
+            </div> <!-- Close Main-->
         </div><!-- Close content-->
 
     </div><!-- Close container -->
