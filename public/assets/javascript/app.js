@@ -31,22 +31,7 @@ function fetchAnimals(event) {
 	  
 
 
-    //Start API sequence using JSONP...
-    var url = 'https://api.petfinder.com/pet.find';
-    var apiKey = "0164d1167e200069fe3eb9c06cc6f8b8";
-    // Within $.ajax{...} is where we fill out our query... 
-    $.ajax({
-        url: url,//baseurl for api...
-        jsonp: "callback",//define callback...
-        dataType: "jsonp",//request data in JSONP...
-        data: {
-            key: apiKey,//apiKey...
-            animal: animal,//animal variable from click...
-            'location': zip,//zip code from input...
-            count: 20,//search return amount...
-            output: 'basic',//argument to return basic animal profile...
-            format: 'json'//define the output for JSON and not XML...
-        },
+    
         //response from JSONP...
         success: function (response) {
             $('#results').empty();
@@ -100,47 +85,6 @@ function fetchAnimals(event) {
 
 				//Click Feature to redirect to the animals full profile
                 var href = 'https://www.petfinder.com/search/pets-for-adoption/?id=' + petId;
-                var anchor = $('<a>').attr('href', href).attr('target', blank);
-				var maphref = 'map.html';
-				var mapAnchor = $('<a>').attr('href', maphref);
+			
 				
-				//Build out the map feature with classes and attributes...
-				mapAnchor.addClass("mapLink");
-				mapAnchor.addClass('white-text');
-				mapAnchor.attr('data-city', city);
-				mapAnchor.attr('data-zip', zip);
-				mapAnchor.attr('data-state', state);
-				mapAnchor.text("Show Map");
-                anchor.text("Click Here To See My Story!");
-                divRow.append(divCol);
-                divCol.append(divCard);
-                divCard.append(divCardImg);
-                divCardImg.append(img).append(span);
-                divCardImg.append(span);
-                divCard.append(divContent);
-                divContent.append(statement);
-                divAction.addClass('card-action cyan');
-				divCard.append(divAction);
-                divAction.append(anchor);
-				divAction.append(mapAnchor);
-				anchor.addClass('white-text');
-				mapAnchor.attr('white-text');
-                //Append to the results div on HTML... 
-                $("#results").append(divRow);
-            });
-                }});
-            }//fetchAnimals
-
-
-$(document).on('click', '.mapLink', function(){
-	var city = $(this).attr("data-city");
-	var state = $(this).attr("data-state");
-	var zip = $(this).attr("data-zip");
-
-	localStorage.setItem("city", city);
-	localStorage.setItem("zip", zip );
-	localStorage.setItem("state", state);
-
-	window.location.href = $(this).attr('href');
-
-});
+	
