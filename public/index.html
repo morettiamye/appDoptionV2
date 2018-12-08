@@ -9,47 +9,46 @@
 
     <!-- Google Fonts CDN-->
     <link href="https://fonts.googleapis.com/css?family=Cookie|Roboto" rel="stylesheet">
-    
+
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/style/style.css">
 
-         <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-  crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
 
 
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="header">
-            <div class="logo"> 
-                <img src="./assets/images/pawIcon.png" alt="Paw" id="paw"> AppDoption 
-            </div>
-            <span class="search"><input type="text" placeholder="Search"></input><i class="fas fa-cat"></i><i class="fas fa-dog"></i></span>
-    </div> <!-- Close Header-->
-
-    <!-- Main Content Container-->
     <div class="container">
-     
-        </div>
+        <!-- Header -->
+        <div class="header">
+            <span><img src="./assets/images/pawIcon.png" alt="Paw" id="paw"></span>
+            <span id="logo">Appdoption</span>
+            <span class="search">
+                <input type="text" placeholder="Search"></input>
+            </span>
+        </div> <!-- Close Header-->
 
 
+        <!-- Main Content Container-->
+        <div class="content">
+            <!-- Hide this when displaying search results-->
+            <div class="main"></div> <!-- Close Main-->
+            <!-- Show this div for search results-->
+            <div class="results"></div> <!-- Close Results-->
+            <!-- Show for about page -->
+            <div class="about"></div><!-- Close about-->
+        </div><!-- Close content-->
 
-    <!-- Show this div for Search Results -->
-    <div id="searchResults">
-
-    </div>
-
-
-
-
+    </div><!-- Close container -->
 
     <!-- jQuery -->
     <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
         crossorigin='anonymous'></script>
-    
+
     <!-- Base Javascript -->
     <script src="assets/javascript/app.js"></script>
 
