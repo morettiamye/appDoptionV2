@@ -10,12 +10,11 @@
     <!-- Google Fonts CDN-->
     <link href="https://fonts.googleapis.com/css?family=Cookie|Roboto:300" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/style/style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
 
 
 
@@ -25,42 +24,41 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <span><img src="./assets/images/pawIcon.png" alt="Paw" id="paw"></span>
+            <span id="pawLogo"><img src="./assets/images/pawIcon.png" alt="Paw" id="paw"></span>
             <span id="logo">Appdoption</span>
             <span class="search">
-                <form>
-                    <input type="text" maxlength="5" placeholder="Search by Zipcode" class="headerSearch"></input>
-                    <input type="radio" name="search" value="cats" checked>Cats
-                    <input type="radio" name="search" value="dogs">Dogs
-            </span>
+            <form>   
+                <input type="text" maxlength="5" placeholder="Search by Zipcode" id="zip" class="headerSearch"></input>
+                <button type="submit" id="catButton"><i class="fas fa-cat"></i> Search Cats</button>
+                <button type="submit" id="dogButton"><i class="fas fa-dog"></i> Search Dogs</button>
             </form>
+            </span>
         </div> <!-- Close Header-->
-
+        
 
         <!-- Main Content Container-->
         <div class="content">
             <!-- Hide this when displaying search results-->
             <div class="main">
 
+                    <!-- Target Results to go here -->
+                    <div class="resultscontainer">
                 
                 <!-- ////////////////////To be Copied for Dynamically Updating ///////////////////////// -->
-                <div class="resultscontainer">
+                
                 <img src="assets/images/placeholder.jpeg" alt="placeholder" class="card">
                 <div class="middle">
                         <div class="cardname">Mr Fluffy</div>
                         </div>
                 </div>
                 <!-- ////////////////////To be Copied for Dynamically Updating ///////////////////////// -->
-
-
+                
+                <!-- Target this for random results, then hide when search happens -->
+                <div class="mainContainer"></div>
             </div> <!-- Close Main-->
         </div><!-- Close content-->
 
     </div><!-- Close container -->
-
-    <!-- jQuery -->
-    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
-        crossorigin='anonymous'></script>
 
     <!-- Base Javascript -->
     <script src="assets/javascript/app.js"></script>
