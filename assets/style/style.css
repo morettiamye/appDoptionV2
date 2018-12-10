@@ -1,7 +1,6 @@
 /* Font Families:
 font-family: 'Cookie', cursive;
 font-family: 'Roboto', sans-serif;
-
 */
 
 .container {
@@ -66,42 +65,20 @@ button {
 
 .content {
     display: flex;
+    justify-content: center;
     padding: 50px;
-    flex-flow: row wrap;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
-.results {
-    position: relative;
-}
 .card {
     object-fit: cover;
     height: 300px;
     width: 300px;
     border: 1px solid #DBDBDB;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    opacity: 1;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-
-  .resultscontainer:hover .card {
-    opacity: 0.3;
-  }
-  
-  .resultscontainer:hover .middle {
-    opacity: 1;
-  }
-  
+    margin: 20px;
+}  
   .cardname {
     color: black;
     font-size: 20px;
