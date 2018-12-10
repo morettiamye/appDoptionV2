@@ -9,7 +9,6 @@ font-family: 'Roboto', sans-serif;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     background-color: #FAFAFA;
-    
 }
 
 /* Header Style */
@@ -65,22 +64,19 @@ button {
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 100px; */
 }
 
-
+.results {
+    width: 1000px;
+}
 .card {
     object-fit: cover;
     height: 300px;
     width: 300px;
     border: 1px solid #DBDBDB;
-    margin: 20px;
+    margin: 15px;
 }  
-  .cardname {
-    color: black;
-    font-size: 20px;
-    padding: 16px 32px;
-  }

@@ -33,23 +33,15 @@ function getPet() {
 
       adoptablePet.forEach(function(pet) {
           console.log(pet);
-        let petCard = document.createElement("img");
+        let petLink = document.createElement("a");
+        petLink.setAttribute("href", "https://www.petfinder.com/search/pets-for-adoption/?id=" + pet.id.$t);
+        petLink.setAttribute("target", "_blank");
+        var img = document.createElement("img");
+        var petCard = petLink.appendChild(img);
         petCard.setAttribute("src", pet.media.photos.photo[3].$t);
-        petCard.setAttribute("alt", pet.name.$);
+        petCard.setAttribute("alt", pet.name.$t);
         petCard.classList.add("card");
-        // let midDiv = document.createElement("div");
-        // midDiv.classList.add("middle");
-        // let lastDiv = document.createElement("div");
-        // lastDiv.classList.add("cardname");
-        // let petName = document.createElement("a");
-        // petName.setAttribute(
-        //   "href",
-        //   "https://www.petfinder.com/search/pets-for-adoption/?id=" + pet.id.$t
-        // );
-        // petName.innerHTML = pet.name.$;
-        results.appendChild(petCard);
-      //   results.appendChild(midDiv);
-      //   results.appendChild(lastDiv);
+        results.appendChild(petLink);
       // });
     });
   }
