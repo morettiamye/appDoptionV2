@@ -29,15 +29,17 @@ function getPet() {
     success: function(response) {
         var results = document.querySelector(".results");
         var adoptablePet = response.petfinder.pets.pet;
-
+       
+        while(results.firstChild) {
+          results.removeChild(results.firstChild);
+        }
 
       adoptablePet.forEach(function(pet) {
-          console.log(pet);
         let petLink = document.createElement("a");
         petLink.setAttribute("href", "https://www.petfinder.com/search/pets-for-adoption/?id=" + pet.id.$t);
         petLink.setAttribute("target", "_blank");
-        var img = document.createElement("img");
-        var petCard = petLink.appendChild(img);
+        let img = document.createElement("img");
+        let petCard = petLink.appendChild(img);
         petCard.setAttribute("src", pet.media.photos.photo[3].$t);
         petCard.setAttribute("alt", pet.name.$t);
         petCard.classList.add("card");
