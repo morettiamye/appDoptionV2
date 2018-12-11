@@ -60,6 +60,13 @@ button {
     font-size: 10px;
 }
 
+button:hover {
+    background-color: #262626;
+    color:  #FAFAFA;
+    cursor: pointer;
+  }
+
+
 /* Main Content Style*/
 
 .content {
@@ -73,6 +80,8 @@ button {
 .results {
     width: 1000px;
 }
+
+/* Search Results Style*/
 .card {
     object-fit: cover;
     height: 300px;
@@ -80,3 +89,27 @@ button {
     border: 1px solid #DBDBDB;
     margin: 15px;
 }  
+
+/* unvisited link */
+a:link {
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #262626;
+    text-decoration: none;
+  }
