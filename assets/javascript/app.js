@@ -22,7 +22,7 @@ function getPet() {
       key: pfKey,
       animal: animal,
       location: zipCode,
-      count: 50,
+      count: 51,
       output: "basic",
       format: "json"
     },

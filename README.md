@@ -17,5 +17,9 @@ All data is currently provided through the [Pet Finder API](https://www.petfinde
 ### How-To
 Using Appdoption is simple.  Simply plug in the zipcode you would like to search, and click Search Cats or Search Dogs.  Appdoption currently only supports US zipcodes, but we hope to add international searches in the future.
 
+### Future Iterations
+* Improve the search results.  The Petfinder API is limited in what it returns (including not returning a direct URL to the pets profile), so we would love to work with any other APIs that may be available now or in the future.
+* Information modal.  Adding a the ability to hover over a card and see additional information without having to directly go to Petfinder would be great.
+
 ### Special Thanks
-Special thanks to [Mark Thompson](https://github.com/MarkTechson), [Nelly Sugu](https://github.com/jonly03), [Michael Doherty](https://github.com/mkdoh3), and [Poornima Sewak](https://github.com/poornimasewak) for their instruction and help with making version 1, and all of their feedback on the project.
+Special thanks to [Mark Thompson](https://github.com/MarkTechson), [Nelly Sugu](https://github.com/jonly03), [Michael Doherty](https://github.com/mkdoh3), and [Poornima Sewak](https://github.com/poornimasewak) for their course instruction and help with making version 1, and all of their feedback on the project.
