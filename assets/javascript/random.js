@@ -20,17 +20,23 @@ function randomPet() {
             format: "json"
         },
         success: function (response) {
+            console.log(response);
             var results = document.querySelector(".results");
             var adoptablePet = response.petfinder.pet;
 
-
             adoptablePet.forEach(function (pet) {
+                let petPhoto = "";
+                    if (Object.keys(pet.media).length === 0) {
+                 petPhoto = "./assets/images/pawIcon.png";
+                    } else {
+                petPhoto = pet.media.photos.photo[3].$t;
+                };
                 let petLink = document.createElement("a");
                 petLink.setAttribute("href", "https://www.petfinder.com/search/pets-for-adoption/?id=" + pet.id.$t);
                 petLink.setAttribute("target", "_blank");
                 let img = document.createElement("img");
                 let petCard = petLink.appendChild(img);
-                petCard.setAttribute("src", pet.media.photos.photo[3].$t);
+                petCard.setAttribute("src", petPhoto);
                 petCard.setAttribute("alt", pet.name.$t);
                 petCard.classList.add("card");
                 results.appendChild(petLink);
