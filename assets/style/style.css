@@ -125,3 +125,21 @@ a:link {
     color: #262626;
     background-color: #FFFFFF;
   }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .header {
+        
+        flex-direction: column;
+
+    }
+    
+    #paw {
+        display: none;
+    }
+
+    .headerSearch {
+        width: 90%;
+    }
+    
+}

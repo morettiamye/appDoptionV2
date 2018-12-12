@@ -20,7 +20,6 @@ function randomPet() {
             format: "json"
         },
         success: function (response) {
-            console.log(response);
             var results = document.querySelector(".results");
             var adoptablePet = response.petfinder.pet;
 
