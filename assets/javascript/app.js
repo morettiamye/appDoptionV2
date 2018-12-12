@@ -10,7 +10,6 @@ function getPet() {
   }
 
   let zipCode = document.querySelector("#zip").value;
-
   const url = "https://api.petfinder.com/pet.find";
   const pfKey = "d3460587ab0aa2e88944f5afe4cca27e";
 
@@ -22,7 +21,7 @@ function getPet() {
       key: pfKey,
       animal: animal,
       location: zipCode,
-      count: 51,
+      count: 300,
       output: "basic",
       format: "json"
     },
@@ -35,12 +34,18 @@ function getPet() {
         }
 
       adoptablePet.forEach(function(pet) {
+        let petPhoto = "";
+        if (Object.keys(pet.media).length === 0) {
+          petPhoto = "./assets/images/pawIcon.png";
+             } else {
+         petPhoto = pet.media.photos.photo[3].$t;
+         };
         let petLink = document.createElement("a");
         petLink.setAttribute("href", "https://www.petfinder.com/search/pets-for-adoption/?id=" + pet.id.$t);
         petLink.setAttribute("target", "_blank");
         let img = document.createElement("img");
         let petCard = petLink.appendChild(img);
-        petCard.setAttribute("src", pet.media.photos.photo[3].$t);
+        petCard.setAttribute("src", petPhoto);
         petCard.setAttribute("alt", pet.name.$t);
         petCard.classList.add("card");
         results.appendChild(petLink);
