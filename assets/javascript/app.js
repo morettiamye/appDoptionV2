@@ -36,7 +36,7 @@ function getPet() {
       adoptablePet.forEach(function(pet) {
         let petPhoto = "";
         if (Object.keys(pet.media).length === 0) {
-          petPhoto = "./assets/images/pawIcon.png";
+          petPhoto = "./assets/images/placeholder.png";
              } else {
          petPhoto = pet.media.photos.photo[3].$t;
          };
