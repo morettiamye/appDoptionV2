@@ -24,3 +24,6 @@ Using Appdoption is simple.  Simply plug in the zipcode you would like to search
 
 ### Special Thanks
 Special thanks to [Mark Thompson](https://github.com/MarkTechson), [Nelly Sugu](https://github.com/jonly03), [Michael Doherty](https://github.com/mkdoh3), and [Poornima Sewak](https://github.com/poornimasewak) for their course instruction and help with making version 1, and all of their feedback on the project.
+
+### August 2020 Update
+Unfortunately Petfinder has moved to a new api and with it a major change in free developer acccess.  Security tokens now expire after 30 days of no pings to the API.  Rather than update this project and request keys as needed, I have chosen to archive this project.
